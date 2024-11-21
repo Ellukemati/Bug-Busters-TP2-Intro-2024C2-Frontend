@@ -19,7 +19,7 @@
         }
     }
     function resetSearch() {
-        var input = document.getElementById("ingreso");
+        let input = document.getElementById("ingreso");
         input.value = '';
         myFunction();
     }
@@ -27,8 +27,11 @@
 <h1>Movimientos</h1>
 <form class="buscador">
     <label for="filtrar movimientos">Nombre:</label>
-    <input type="text" id="ingreso" onkeyup="{myFunction()}" placeholder="search " />
-    <button type="reset" onclick={resetSearch()} aria-label="reiniciar"></button>
+    <input type="search" id="ingreso" placeholder="nombre..">
+    <label for="ingresar">buscar:</label>
+    <button type="submit" on:click={myFunction()} aria-label="ingresar"></button>
+    <label for="reiniciar">reiniciar:</label>
+    <button type="reset" on:click={resetSearch()} aria-label="reiniciar"></button>
 </form>
 <table id="Tabla">
    <thead>
