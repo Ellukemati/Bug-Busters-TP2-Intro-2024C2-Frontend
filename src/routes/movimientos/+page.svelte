@@ -70,9 +70,10 @@
 <table id="Tabla">
    <thead>
        <tr>
-           <th style="width:30%;">Numero</th>
+           <th style="width:20%;">Numero</th>
            <th style="width:60%;">Nombre</th>
            <th style="width:10%;">Tipo</th>
+           <th style="width:10%;">Categoria</th>
        </tr>
    </thead>
    <tbody>
@@ -85,6 +86,11 @@
                         {movimiento.tipo}       
                     </p>
                 </td>
+               <td>
+                    <p class="{movimiento.categoria}">
+                        {movimiento.categoria}
+                    </p>
+               </td>
            </tr>
        {/each}
    </tbody>
@@ -122,6 +128,25 @@
         border: 10px solid black;
         text-align: left;
         padding: 8px;
+        background-color: #8899ff;
+    }
+    .físico{
+        background-image:url("https://img.pokemondb.net/images/icons/move-physical.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+    .especial{
+        background-image:url("https://img.pokemondb.net/images/icons/move-special.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+    .estado{
+        background-image:url("https://img.pokemondb.net/images/icons/move-status.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
     }
     .Hada{
         display: inline-block;
@@ -452,6 +477,9 @@
         padding: 8px;
     }
     tr:nth-child(even) {
-        background-color: #33ecff;
+        background-color: #32c0d0;
         }
+    tr{
+        background-color: rgb(233, 229, 229);
+    }
 </style>
