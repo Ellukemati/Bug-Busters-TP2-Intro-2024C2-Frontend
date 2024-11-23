@@ -477,9 +477,9 @@
         padding: 8px;
     }
     tr:nth-child(even) {
-        background-color: #32c0d0;
+        background-color: #2de1f6;
         }
     tr{
-        background-color: rgb(233, 229, 229);
+        background-color: rgb(246, 241, 241);
     }
 </style>
