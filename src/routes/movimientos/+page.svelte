@@ -30,13 +30,6 @@
     <label for="filtrar movimientos">Nombre:</label>
     <input type="search" id="ingreso" onkeyup={filtrar_mesa} placeholder="nombre..">
 </form>
-<Typeahead
-   label="Preseleccionar alumno"
-   placeholder={`Buscar alumno por nombre o apellido`}
-   data={data.movimientos}
-   extract={(movimiento) => `${movimiento.nombre}`}
-   inputAfterSelect='clear'
-/>
 
 <table id="Tabla">
    <thead>
@@ -51,7 +44,11 @@
        {#each movimientos as movimiento}
            <tr>
                <td>{movimiento.id}</td>
-               <td>{movimiento.nombre}</td>
+               <td>
+                <a href="/movimientos/{movimiento.id}">
+                    {movimiento.nombre}
+                </a>
+            </td>
                <td>
                     <p class="{movimiento.tipo}">
                         {movimiento.tipo}       
