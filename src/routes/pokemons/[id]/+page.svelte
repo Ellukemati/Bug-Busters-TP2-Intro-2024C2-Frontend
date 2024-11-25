@@ -13,6 +13,7 @@
 
 <main class="main">
 	<header>
+		<img src={data.pokemon.url_imagen} alt="Imagen de {data.pokemon.nombre}" class="header-img" />
 		<h1>{capitalizeFirstLetter(data.pokemon.nombre)}</h1>
 	</header>
 	<img src={data.pokemon.url_imagen} alt="Imagen de {data.pokemon.nombre}" class="imagen" />
@@ -152,5 +153,32 @@
 				</table>
 			</div>
 		{/if}
+	</div>
+	<div>
+		<p class="table-title">Movimientos que puede aprender {data.pokemon.nombre}</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Generacion</th>
+					<th>Tipo</th>
+					<th>Poder</th>
+				</tr>
+			</thead>
+			{#each data.movimientos as movimiento}
+				<tbody>
+					<tr>
+						<td class="table-content-boton"
+							><a href={`/moves/${movimiento.id}`}>{movimiento.nombre}</a></td
+						>
+						<td class="table-content">{movimiento.generacion}</td>
+						<td class={movimiento.tipo}>{movimiento.tipo}</td>
+						{#if movimiento.power}
+							<td class="table-content">{movimiento.power}</td>
+						{/if}
+					</tr>
+				</tbody>
+			{/each}
+		</table>
 	</div>
 </main>
