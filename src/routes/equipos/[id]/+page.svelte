@@ -16,7 +16,9 @@
         {#each data.equipo.pokemons_de_equipo as integrante}
             <tr>
                 <td class="poke">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="integrante" class="dot">
+                    <a href="../routes/integrantes/{integrante.id}">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="integrante" class="dot">
+                    </a>
                     <img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/pokeball_icon_136305.png" alt="pokebola" class="bola">
                 </td>
                 <td>
@@ -37,7 +39,7 @@
  <style>
 h1{
     text-align: center;
-    
+
 }
 table {
     font-family: arial, sans-serif;
