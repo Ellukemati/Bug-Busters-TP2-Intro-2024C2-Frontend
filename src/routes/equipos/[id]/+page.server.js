@@ -8,8 +8,7 @@ export async function load({ params }) {
    }
 
    let equipo = await response.json();
-
    return {
-       equipo
+       equipo,
    };
 }

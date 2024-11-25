@@ -1,5 +1,5 @@
 {
-	"name": "frontend",
+	"name": "directorio",
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
@@ -7,7 +7,9 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"lint": "prettier --check . && eslint .",
+		"test:unit": "vitest",
+		"test": "npm run test:unit -- --run"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
@@ -20,7 +22,7 @@
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
 		"svelte": "^5.0.0",
-		"svelte-typeahead": "^4.4.2",
-		"vite": "^5.0.3"
+		"vite": "^5.0.3",
+		"vitest": "^2.0.4"
 	}
 }
