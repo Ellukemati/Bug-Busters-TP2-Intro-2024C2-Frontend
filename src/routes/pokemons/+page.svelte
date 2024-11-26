@@ -82,7 +82,7 @@ class="buscador"
     .buscador {
         margin: 1rem auto;
         padding: 0.8rem;
-        width: 99%;
+        width: 98%;
         font-size: 1rem;
         border: 1px solid #ccc;
         border-radius: 4px;
