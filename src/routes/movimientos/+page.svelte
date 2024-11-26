@@ -1,6 +1,5 @@
 <script>
     export let data;
-    import Typeahead from "svelte-typeahead";
     import "./estilos.css"
     const movimientos = data.movimientos
     function filtrar_mesa() {
