@@ -24,7 +24,7 @@
       } 
     }
 </script>
-<h1>Movimientos</h1>
+<h1>Equipos</h1>
 <form class="buscador">
     <label for="filtrar equipos">Buscar equipo:</label>
     <input type="search" id="ingreso" onkeyup={filtrar_mesa} placeholder="nombre..">
