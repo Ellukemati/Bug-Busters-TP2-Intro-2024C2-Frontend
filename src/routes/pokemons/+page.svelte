@@ -37,7 +37,7 @@ class="buscador"
 	<ul class="resultados">
 		{#each resultados as pokemon, index}
 			<li class="resultado-item {index % 2 === 0 ? 'gris' : 'blanco'}">
-				<a href="/src/routes/pokemons/{pokemon.id}" class="resultado-link">
+				<a href="/pokemons/{pokemon.id}" class="resultado-link">
 					<img src="{pokemon.url_imagen}" alt="{formatearNombre(pokemon.nombre)}" class="resultado-imagen" />
 					<div class="resultado-info">
 						<h3>{formatearNombre(pokemon.nombre)}</h3>
@@ -60,7 +60,7 @@ class="buscador"
 
 <div class="grilla-pokemon">
 	{#each listaPokemon as pokemon}
-		<a href="/src/routes/pokemons/{pokemon.id}" class="pokemon-tarjeta">
+		<a href="/pokemons/{pokemon.id}" class="pokemon-tarjeta">
 			<span class="pokemon-id">ID #{pokemon.id}</span>
 			<img src="{pokemon.url_imagen}" alt="Imagen de {formatearNombre(pokemon.nombre)}" />
 			<h2>{formatearNombre(pokemon.nombre)}</h2>
