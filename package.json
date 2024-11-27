@@ -1,5 +1,5 @@
 {
-	"name": "directorio",
+	"name": "bug-busters-tp2-intro-2024c2-frontend",
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
@@ -7,9 +7,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint .",
-		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run"
+		"lint": "prettier --check . && eslint ."
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
