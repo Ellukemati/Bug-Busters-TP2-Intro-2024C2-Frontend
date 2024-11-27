@@ -28,7 +28,9 @@
                 <td>
                     <ul class="moves">
                         {#each integrante.movimientos as movimiento}
-                        <p>{movimiento.nombre}   </p>
+                        <p><a href="/movimientos/{movimiento.id}">
+                            {movimiento.nombre}
+                        </a>   </p>
                     {/each}
                     </ul>
                     
