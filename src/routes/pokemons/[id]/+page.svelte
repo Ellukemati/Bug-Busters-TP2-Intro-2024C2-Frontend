@@ -169,7 +169,7 @@
 				<tbody>
 					<tr>
 						<td class="table-content-boton"
-							><a href={`/moves/${movimiento.id}`}>{movimiento.nombre}</a></td
+							><a href={`/movimientos/${movimiento.id}`}>{movimiento.nombre}</a></td
 						>
 						<td class="table-content">{movimiento.generacion}</td>
 						<td class={movimiento.tipo}>{movimiento.tipo}</td>
