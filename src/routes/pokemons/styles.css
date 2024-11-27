@@ -1,0 +1,148 @@
+:global(body) {
+    font-family: 'Press Start 2P', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.grilla-pokemon {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.pokemon-tarjeta {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pokemon-tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-tarjeta img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.pokemon-tarjeta h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.pokemon-tarjeta p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+
+.pokemon-tarjeta span {
+    display: block;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.Cartel-Tipo {
+    display: inline-block;
+    min-width: 66px;
+    background: #888;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    transition: opacity 0.4s;
+    padding: 4px;
+}
+
+.Normal {
+    background: #aaaa99;
+}
+
+.Fuego {
+    background: #ff4422;
+}
+
+.Agua {
+    background: #3399ff;
+}
+
+.Eléctrico {
+    background: #ffcc33;
+}
+
+.Planta {
+    background: #77cc55;
+}
+
+.Hielo {
+    background: #66ccff;
+}
+
+.Lucha {
+    background: #bb5544;
+}
+
+.Veneno {
+    background: #aa5599;
+}
+
+.Tierra {
+    background: #ddbb55;
+}
+
+.Volador {
+    background: #8899ff;
+}
+
+.Psíquico {
+    background: #ff5599;
+}
+
+.Bicho {
+    background: #aabb22;
+}
+
+.Roca {
+    background: #bbaa66;
+}
+
+.Fantasma {
+    background: #6666bb;
+}
+
+.Dragón {
+    background: #7766ee;
+}
+
+.Siniestro {
+    background: #775544;
+}
+
+.Acero {
+    background: #aaaabb;
+}
+
+.Hada {
+    background: #ee99ee;
+}
