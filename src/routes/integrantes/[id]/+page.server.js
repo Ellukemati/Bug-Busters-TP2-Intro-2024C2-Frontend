@@ -23,7 +23,7 @@ async function encontrar_integrante(id, equipos) {
         }
     }
     if (integrante == null){
-        throw error(404, "el integrante no fue encontrado");
+        throw error(404, "Error: 404");
     }
     return integrante
 }
