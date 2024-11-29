@@ -8,9 +8,9 @@
     <div class="id">
         <p class="texto">id del integrante: {integrante.id}</p>
     </div>
-    <div>
+    <div class="integrante_foto">
         <a href="{`/pokemons/${integrante.pokemon_id}`}">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="imagen del integrante" class="imagen_integrante">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="imagen del integrante" >
         </a>
     </div>
     <div>
