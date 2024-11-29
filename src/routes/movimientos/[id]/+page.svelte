@@ -56,8 +56,13 @@
     .titulo {
         font-family: 'Press Start 2P', sans-serif;
         font-size: 2rem;
-        font-weight: bold;
         margin-bottom: 20px;
+        color: #2b2b2b
+    }
+    .subtitulo {
+        font-family: 'Press Start 2P', sans-serif;
+        font-size: 1rem;
+        margin: 20px;
         color: #2b2b2b
     }
 
@@ -72,7 +77,6 @@
         padding: 10px;
         border-radius: 8px;
         background-color: #ffffff;
-        text-decoration: none;
         color: #333;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -83,11 +87,10 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-    .seccion h3 {
+    .seccion h3{
         font-size: 1.5rem;
         margin-bottom: 10px;
         border-bottom: 2px solid #000000;
-        padding-bottom: 5px;
     }
 
     .item {
@@ -95,7 +98,6 @@
     }
 
     .item span {
-        font-weight: bold;
         color: #313131;
     }
 
@@ -114,7 +116,7 @@
                 <span 
                     class="Cartel-Tipo"
                     style="background-color: {obtenerColor(data.move.tipo)};
-                             color: #fff;">
+                            color: #fff;">
                     {formatearNombre(data.move.tipo)}
                 </span>
             </p>
@@ -127,13 +129,14 @@
 
         <div class="seccion">
             <h3>Efectos</h3>
-            <p>{data.move.efecto || "No effects listed."}</p>
+            <p>{data.move.efecto}</p>
             <p class="item"><span>Probabilidad de Efecto:</span> {data.move.probabilidad_efecto || "-"}%</p>
         </div>
     </div>
 </div>  
 
-<h2>Pokemones que pueden aprender este movimiento: </h2>
+
+<h2 class="subtitulo">  Pokemones que pueden aprender este movimiento: </h2>
 <div class="grilla-pokemon">
     {#each data.pokemonList as pokemon}
         <a href="/pokemons/{pokemon.id}" class="pokemon-tarjeta">
