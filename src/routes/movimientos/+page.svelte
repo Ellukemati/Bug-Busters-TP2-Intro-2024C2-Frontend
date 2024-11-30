@@ -42,13 +42,16 @@
    <tbody>
        {#each movimientos as movimiento}
            <tr>
-               <td>{movimiento.id}</td>
-               <td>
-                <a href="/movimientos/{movimiento.id}">
+               <td class="texto_movs">{movimiento.id}</td>
+               <td class="texto_movs">
+                <p class="nombre_movs_individual">
+                  <a href="/movimientos/{movimiento.id}" class="nombre_movs_individual">
                     {movimiento.nombre}
-                </a>
+                </a>  
+                </p>
+                
             </td>
-               <td>
+               <td class="columna_tipos">
                     <p class="{movimiento.tipo}">
                         {movimiento.tipo}       
                     </p>

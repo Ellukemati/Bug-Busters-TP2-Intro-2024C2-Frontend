@@ -3,29 +3,30 @@
     import "./estilos.css"
  </script>
  
- <h1>Equipo: {data.equipo.nombre}</h1>
+ <h1 class="nombre_equipo">Equipo: {data.equipo.nombre}</h1>
  <h2>Integrantes:</h2>
- <table>
+ <table class="tabla_de_miembros">
     <thead>
         <tr>
-            <th style="width:20%;" >Pokemon</th>
-            <th style="width:15%;">Naturaleza</th>
-            <th style="width:65%;">Movimientos</th>
+            <th style="width:20%;" class="cabezera_equipo_id">Pokemon</th>
+            <th style="width:15%;" class="cabezera_equipo_id">Naturaleza</th>
+            <th style="width:65%;" class="cabezera_equipo_id">Movimientos</th>
         </tr>
     </thead>
     <tbody>
         {#each data.equipo.pokemons_de_equipo as integrante}
-            <tr>
-                <td class="poke">
-                    <a href="../routes/integrantes/{integrante.id}">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="integrante" class="dot">
-                    </a>
-                    <img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/pokeball_icon_136305.png" alt="pokebola" class="bola">
+            <tr class="cuerpo_equipo_id">
+                <td class="celda_equipo_id">
+                    <div class="celda_integrante">
+                        <a href="/integrantes/{integrante.id}">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="integrante" class="img_integrante">
+                        </a>
+                    </div>
                 </td>
-                <td>
+                <td class="celda_equipo_id">
                     <p class="naturaleza">{integrante.naturaleza}</p>
                 </td>
-                <td>
+                <td class="celda_equipo_id">
                     <ul class="moves">
                         {#each integrante.movimientos as movimiento}
                         <p><a href="/movimientos/{movimiento.id}">

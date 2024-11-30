@@ -12,15 +12,18 @@
     h1{
         text-align: center;
     }
+    .nombre_movs_individual:link{
+        font-family: 'Press Start 2P', sans-serif;
+        text-decoration: none;
+    }
     table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     }
-
      th {
         border: 10px solid black;
-        text-align: left;
+        text-align: center;
         padding: 8px;
         background-color: #8899ff;
     }
@@ -59,6 +62,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Acero{
         display: inline-block;
@@ -77,6 +81,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Siniestro{
         display: inline-block;
@@ -95,6 +100,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Dragón{
         display: inline-block;
@@ -113,6 +119,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Fantasma{
         display: inline-block;
@@ -131,6 +138,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Roca{
         display: inline-block;
@@ -149,6 +157,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Bicho{
         display: inline-block;
@@ -167,6 +176,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Psíquico{
         display: inline-block;
@@ -185,6 +195,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Volador{
         display: inline-block;
@@ -203,6 +214,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Tierra{
         display: inline-block;
@@ -221,6 +233,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Veneno{
         display: inline-block;
@@ -239,6 +252,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Lucha{
         display: inline-block;
@@ -257,6 +271,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Hielo{
         display: inline-block;
@@ -275,6 +290,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Planta{
         display: inline-block;
@@ -293,6 +309,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Oscuro{
         display: inline-block;
@@ -311,6 +328,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Eléctrico{
         display: inline-block;
@@ -329,6 +347,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Agua{
         display: inline-block;
@@ -347,6 +366,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Fuego{
         display: inline-block;
@@ -365,6 +385,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     .Normal{
         display: inline-block;
@@ -383,6 +404,7 @@
     text-transform: uppercase;
     transition: opacity .4s;
     padding: 4px;
+    margin-left: 25%;
     }
     td{
         border: 10px solid black;
@@ -390,8 +412,11 @@
         padding: 8px;
     }
     tr:nth-child(even) {
-        background-color: #2de1f6;
+        background-color: #ffffff;
         }
     tr{
-        background-color: rgb(246, 241, 241);
+        background-color: #dfdfdf;
+    }
+    .texto_movs{
+        font-family: 'Press Start 2P', sans-serif;
     }
