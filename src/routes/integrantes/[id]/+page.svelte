@@ -2,7 +2,7 @@
     let { data } = $props();
     const integrante = data.integrante
     const pokemon = data.pokemon
-    const equipo_id = data.equipo_id
+    const equipo = data.equipo
     import "./estilos.css"
  </script>
 <h1 class="titulo_integrante">Integrante</h1>
@@ -23,8 +23,8 @@
     </div>
     <div>
         <p class="texto">pertenece al equipo: 
-        <a href="{`/equipos/${equipo_id.id_equipo}`}">    
-            {equipo_id.nombre}
+        <a href="{`/equipos/${equipo.id_equipo}`}">    
+            {equipo.nombre}
         </a>
         </p>
     </div>
