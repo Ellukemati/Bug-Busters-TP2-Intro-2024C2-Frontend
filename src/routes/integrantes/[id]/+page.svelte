@@ -1,6 +1,8 @@
 <script>
     let { data } = $props();
     const integrante = data.integrante
+    const pokemon = data.pokemon
+    const equipo_id = data.equipo_id
     import "./estilos.css"
  </script>
 <h1 class="titulo_integrante">Integrante</h1>
@@ -9,15 +11,39 @@
         <p class="texto">id del integrante: {integrante.id}</p>
     </div>
     <div class="integrante_foto">
-        <a href="{`/pokemons/${integrante.pokemon_id}`}">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="imagen del integrante" >
+        <a href="{`/pokemons/${pokemon.id}`}">
+            <img src="{pokemon.url_imagen}" alt="imagen del integrante" >
         </a>
     </div>
     <div>
         <p class = "texto">naturaleza: {integrante.naturaleza}</p>
     </div>
+    <div>
+        <p class = "texto">especie: {pokemon.nombre}</p>
+    </div>
+    <div>
+        <p class="texto">pertenece al equipo: 
+        <a href="{`/equipos/${equipo_id.id_equipo}`}">    
+            {equipo_id.nombre}
+        </a>
+        </p>
+    </div>
+    <div>
+        <div class="tipos_logos">
+            <p class="{pokemon.tipo_1}">
+                {pokemon.tipo_1}
+            </p>
+        </div>
+        {#if pokemon.tipo_2 != null}
+            <div class="tipos_logos">
+                <p class="{pokemon.tipo_2}">
+                    {pokemon.tipo_2}
+                </p>
+            </div>
+        {/if}
+    </div>
 </div>
-<h2>Movimientos que utiliza</h2>
+<h2>Movimientos que conoce</h2>
 <table class="tabla_movs_usados">
     <thead>
         <tr>
