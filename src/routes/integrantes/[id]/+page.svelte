@@ -22,7 +22,7 @@
         <p class = "texto">especie: {pokemon.nombre}</p>
     </div>
     <div>
-        <p class="texto">pertenece al equipo: 
+        <p class="texto">equipo: 
         <a href="{`/equipos/${equipo.id_equipo}`}">    
             {equipo.nombre}
         </a>
