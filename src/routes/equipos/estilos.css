@@ -27,13 +27,18 @@ table {
     .link_equipo_particular:link{
         text-decoration: none;
     }
-    .bola {
-        height: 95px;
-  width: 95px;
-  border-radius: 60%;
-  z-index: 0;
-  background-color: rgb(255, 0, 0);
-  align-content: center;
+.celda_integrante_particular{
+    text-align: center;
+    flex-direction: row;
+    padding: 8px;
+    border-radius: 60%;
+    width: 100px;
+    height: 100px;
+    margin-left: 80px;
+    background-image: url("https://cdn.icon-icons.com/icons2/2248/PNG/512/pokeball_icon_136305.png");
+    background-size: contain;
+    background-color: rgb(255, 0, 0);
+    display: inline-block;
 }
 .naturaleza{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -43,20 +48,14 @@ table {
 }
 .miembros{
     display:inline-table;
+    flex-direction: row;
     height: 95px;
     align-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     color:aqua;
-}
-.dot{
-    position: absolute;
-    height: 95px;
-  width: 95px;
-  border-radius: 60%;
-  z-index: 1;
-  align-content: center;
+    
 }
 label{
     font-family: Arial, Helvetica, sans-serif;

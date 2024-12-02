@@ -54,16 +54,17 @@
                 </a>
             </td>
                <td>
-                    <ul class="miembros">
+                    <div class="miembros">
                         
                         {#each equipo.pokemons_de_equipo as integrante}
-                            <a href="/integrantes/{integrante.id}">
-                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="integrante" class="dot">
-                                
-                            </a>
-                            <img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/pokeball_icon_136305.png" alt="pokebola" class="bola">
+                            <div class="celda_integrante_particular">
+                                <a href="/integrantes/{integrante.id}">
+                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="integrante" class="dot">
+                                </a>
+                            </div>
+                            
                         {/each}
-                    </ul>
+                        </div>
                 </td>
            </tr>
        {/each}

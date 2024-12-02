@@ -1,1 +1,91 @@
-<h1>hola mundo</h1>
+<script>
+    let { data } = $props();
+    const integrante = data.integrante
+    const pokemon = data.pokemon
+    const equipo = data.equipo
+    import "./estilos.css"
+ </script>
+<h1 class="titulo_integrante">Integrante</h1>
+<div class="contenido_integrante">
+    <div class="id">
+        <p class="texto">id del integrante: {integrante.id}</p>
+    </div>
+    <div class="integrante_foto">
+        <a href="{`/pokemons/${pokemon.id}`}">
+            <img src="{pokemon.url_imagen}" alt="imagen del integrante" >
+        </a>
+    </div>
+    <div>
+        <p class = "texto">naturaleza: {integrante.naturaleza}</p>
+    </div>
+    <div>
+        <p class = "texto">especie: {pokemon.nombre}</p>
+    </div>
+    <div>
+        <p class="texto">equipo: 
+        <a href="{`/equipos/${equipo.id_equipo}`}">    
+            {equipo.nombre}
+        </a>
+        </p>
+    </div>
+    <div>
+        <div class="tipos_logos">
+            <p class="{pokemon.tipo_1}">
+                {pokemon.tipo_1}
+            </p>
+        </div>
+        {#if pokemon.tipo_2 != null}
+            <div class="tipos_logos">
+                <p class="{pokemon.tipo_2}">
+                    {pokemon.tipo_2}
+                </p>
+            </div>
+        {/if}
+    </div>
+</div>
+<h2>Movimientos que conoce</h2>
+<table class="tabla_movs_usados">
+    <thead>
+        <tr>
+            <th style="width:20%;" class="titulo_hilera">Numero</th>
+            <th style="width:50%;" class="titulo_hilera">Nombre</th>
+            <th style="width:10%;" class="titulo_hilera">Tipo</th>
+            <th style="width:10%;" class="titulo_hilera">Categoria</th>
+            <th style="width:10%;" class="titulo_hilera">Potencia</th>
+        </tr>
+    </thead>
+    <tbody class="cuerpo_tabla">
+        {#each integrante.movimientos as movimiento}
+            <tr>
+                <td class="contenido_hilera">
+                    <p class="texto">
+                        {movimiento.id}
+                    </p>
+                </td>
+                <td class="contenido_hilera">
+                 <a href="/movimientos/{movimiento.id}">
+                    <p class="texto">
+                        {movimiento.nombre}
+                    </p>
+                 </a>
+             </td>
+                <td class="contenido_hilera">
+                     <p class="texto">
+                         {movimiento.tipo}       
+                     </p>
+                 </td>
+                <td class="contenido_hilera">
+                     <p class="texto">
+                         {movimiento.categoria}
+                     </p>
+                </td>
+                <td class="contenido_hilera">
+                    <p class="texto">
+                        {movimiento.power}
+                    </p>
+                </td>
+            </tr>
+        {/each}
+    </tbody>
+</table>
+
