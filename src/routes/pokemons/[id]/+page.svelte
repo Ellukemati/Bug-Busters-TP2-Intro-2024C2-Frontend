@@ -93,7 +93,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>Altura: {data.pokemon.altura / 1000}mts</td>
+						<td>Altura: {data.pokemon.altura / 10}m</td>
 					</tr>
 					<tr>
 						<td>Peso: {data.pokemon.peso / 10}kg</td>
@@ -108,7 +108,7 @@
 				<table>
 					<thead>
 						<tr>
-							<th class="item-title">Su anterior evolucion es</th>
+							<th class="item-title">Anterior evolucion</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -133,7 +133,7 @@
 				<table>
 					<thead>
 						<tr>
-							<th class="item-title">Evoluciona en...</th>
+							<th class="item-title">Siguiente evolucion</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -182,3 +182,14 @@
 		</table>
 	</div>
 </main>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+	:global(body) {
+		margin: 0;
+		padding: 0;
+		font-family: 'Press Start 2P', cursive;
+		background-color: #ffffff;
+		color: #333333;
+	}
+</style>
