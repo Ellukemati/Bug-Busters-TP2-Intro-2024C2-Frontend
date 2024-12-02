@@ -33,33 +33,38 @@
 <table id="Tabla">
    <thead>
        <tr>
-           <th style="width:10%;">ID</th>
-           <th style="width:20%;">Nombre</th>
-           <th style="width:70%;">Integrantes</th>
+           <th style="width:10%;" class="header_tabla_equipos">ID</th>
+           <th style="width:20%;" class="header_tabla_equipos">Nombre</th>
+           <th style="width:70%;" class="header_tabla_equipos">Integrantes</th>
        </tr>
    </thead>
    <tbody>
        {#each equipos as equipo}
-           <tr>
+           <tr class="cuerpo_equipos">
                <td>
                     <p>
                         {equipo.id_equipo}
                     </p>
                </td>
                <td>
-                <a href="/equipos/{equipo.id_equipo}">
-                    <p>
+                <a href="/equipos/{equipo.id_equipo}" class="link_equipo_particular">
+                    <p class="link_equipo_particular">
                         {equipo.nombre}
                     </p>
                 </a>
             </td>
                <td>
-                    <ul class="moves">
+                    <div class="miembros">
+                        
                         {#each equipo.pokemons_de_equipo as integrante}
-                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="integrante" class="dot">
-                            <img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/pokeball_icon_136305.png" alt="pokebola" class="bola">
+                            <div class="celda_integrante_particular">
+                                <a href="/integrantes/{integrante.id}">
+                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="integrante" class="dot">
+                                </a>
+                            </div>
+                            
                         {/each}
-                    </ul>
+                        </div>
                 </td>
            </tr>
        {/each}

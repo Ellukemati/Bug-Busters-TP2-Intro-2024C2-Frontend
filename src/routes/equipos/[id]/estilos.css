@@ -1,0 +1,76 @@
+.nombre_equipo{
+    text-align: center;
+
+}
+.tabla_de_miembros {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+     .cabezera_equipo_id {
+        border: 10px solid black;
+        text-align: center;
+        padding: 8px;
+        font-size: larger;
+        font-family: 'Press Start 2P', sans-serif;
+        background-color: #8899ff;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        color:rgb(210, 207, 207)
+    }
+    .celda_integrante{
+        text-align: center;
+        padding: 8px;
+        background-color: #8b92ba;
+        border-radius: 60%;
+        width: 100px;
+        height: 100px;
+        margin-left: 120px;
+        background-image: url("https://cdn.icon-icons.com/icons2/2248/PNG/512/pokeball_icon_136305.png");
+        background-size: contain;
+        background-color: rgb(255, 0, 0);
+    }
+    .celda_equipo_id{
+        border: 10px solid black;
+        text-align: center;
+        padding: 8px;
+    }
+    .cuerpo_equipo_id:nth-child(even) {
+        background-color: #ffffff;
+        }
+    .cuerpo_equipo_id{
+        background-color: #dfdfdf;
+    }
+    .pokebola {
+        height: 95px;
+  width: 95px;
+  border-radius: 60%;
+  z-index: 0;
+  background-color: rgb(255, 0, 0);
+  position: relative;
+}
+.img_integrante{
+    height: 95px;
+    width: 95px;
+}
+.naturaleza{
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 30px;
+    color: rgb(11, 219, 94);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.moves{
+    display:inline-table;
+    height: 95px;
+    align-content: center;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(225, 85, 4);
+}
+.texto_equipo_par{
+    font-family: 'Press Start 2P', sans-serif;
+}
+.enlazar_a_movimiento:link{
+    text-decoration: none;
+}

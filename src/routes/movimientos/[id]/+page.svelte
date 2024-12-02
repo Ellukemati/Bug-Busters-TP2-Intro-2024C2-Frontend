@@ -141,11 +141,15 @@
             <img src="{pokemon.url_imagen}" alt="Imagen de {formatearNombre(pokemon.nombre)}" />
             <h2>{formatearNombre(pokemon.nombre)}</h2>
             <div class="tipo-cartel">
-                <span class="{pokemon.tipo_1}" style="background-color: {obtenerColor(pokemon.tipo_1)};">
+                <span class="Cartel-Tipo"
+                    style="background-color: {obtenerColor(pokemon.tipo_1)};
+                             color: #fff;">
                     {formatearNombre(pokemon.tipo_1)}
                 </span>
                 {#if pokemon.tipo_2}
-                    <span class="{pokemon.tipo_2}" style="background-color: {obtenerColor(pokemon.tipo_2)};">
+                    <span class="Cartel-Tipo"
+                    style="background-color: {obtenerColor(pokemon.tipo_2)};
+                             color: #fff;">
                         {formatearNombre(pokemon.tipo_2)}
                     </span>
                 {/if}
