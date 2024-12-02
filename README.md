@@ -1,38 +1,30 @@
-# sv
+# TP2 Introduccion al Desarrollo de Software (FRONTEND)
+Este repositorio fue creado por alumnos de Introducción al Desarrollo de Software TB022 curso Esteban, como parte de la entrega del TP2.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+### Pre-requisitos
 
-## Creating a project
+Version estable de NodeJS
+```
+#Para instalar nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+#Instalar una version de NodeJS, junto a npm ,el manejador de paquetes.
+nvm install node
 ```
 
-## Developing
+_Dependencias:_
+Desde la carpeta del proyecto
+```
+npm install
+```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Ejecutar el proyecto localmente
 
-```bash
+Previamente es necesario iniciar el servidor de backend. 
+Para ver como: https://github.com/Ellukemati/Bug-Busters-TP2-Intro-2024C2-Backend-y-Database?tab=readme-ov-file#readme
+
+Para correr el servidor de Frontend en local:
+```
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
