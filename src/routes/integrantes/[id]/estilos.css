@@ -58,7 +58,7 @@ width: 100%;
 }
 .Planta {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #77cc55;
     border: 1px solid #a3a3a3;
@@ -77,7 +77,7 @@ width: 100%;
 
 .Veneno {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #aa5599;
     border: 1px solid #a3a3a3;
@@ -96,7 +96,7 @@ width: 100%;
 
 .Eléctrico {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #ffcc33;
     border: 1px solid #a3a3a3;
@@ -116,7 +116,7 @@ width: 100%;
 
 .Fuego {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #ff4422;
     border: 1px solid #a3a3a3;
@@ -136,7 +136,7 @@ width: 100%;
 
 .Volador {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #8899ff;
     border: 1px solid #a3a3a3;
@@ -156,7 +156,7 @@ width: 100%;
 
 .Agua {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #3399ff;
     border: 1px solid #a3a3a3;
@@ -175,7 +175,7 @@ width: 100%;
 
 .Normal {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #aaaa99;
     border: 1px solid #a3a3a3;
@@ -194,7 +194,7 @@ width: 100%;
 
 .Bicho {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #aabb22;
     border: 1px solid #a3a3a3;
@@ -213,7 +213,7 @@ width: 100%;
 
 .Roca {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #bbaa66;
     border: 1px solid #a3a3a3;
@@ -232,7 +232,7 @@ width: 100%;
 
 .Tierra {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #ddbb55;
     border: 1px solid #a3a3a3;
@@ -251,7 +251,7 @@ width: 100%;
 
 .Lucha {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #bb5544;
     border: 1px solid #a3a3a3;
@@ -270,7 +270,7 @@ width: 100%;
 
 .Hada {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #ee99ee;
     border: 1px solid #a3a3a3;
@@ -289,7 +289,7 @@ width: 100%;
 
 .Psíquico {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #ff5599;
     border: 1px solid #a3a3a3;
@@ -308,7 +308,7 @@ width: 100%;
 
 .Fantasma {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #6666bb;
     border: 1px solid #a3a3a3;
@@ -327,7 +327,7 @@ width: 100%;
 
 .Siniestro {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #775544;
     border: 1px solid #a3a3a3;
@@ -346,7 +346,7 @@ width: 100%;
 
 .Acero {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #aaaabb;
     border: 1px solid #a3a3a3;
@@ -365,7 +365,7 @@ width: 100%;
 
 .Hielo {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #66ccff;
     border: 1px solid #a3a3a3;
@@ -384,7 +384,7 @@ width: 100%;
 
 .Dragón {
     display: inline-block;
-    width: 66px;
+    min-width: 66px;
     margin-bottom: 4px;
     background: #7766ee;
     border: 1px solid #a3a3a3;
