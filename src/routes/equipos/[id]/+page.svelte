@@ -22,6 +22,9 @@
                         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{integrante.pokemon_id}.png" alt="integrante" class="img_integrante">
                         </a>
                     </div>
+                    <p class="texto_equipo_par">
+                        Id:{integrante.id}
+                    </p>
                 </td>
                 <td class="celda_equipo_id">
                     <p class="naturaleza">{integrante.naturaleza}</p>
@@ -29,7 +32,7 @@
                 <td class="celda_equipo_id">
                     <ul class="moves">
                         {#each integrante.movimientos as movimiento}
-                        <p><a href="/movimientos/{movimiento.id}">
+                        <p class="enlazar_a_movimiento"><a href="/movimientos/{movimiento.id}" class="enlazar_a_movimiento">
                             {movimiento.nombre}
                         </a>   </p>
                     {/each}
