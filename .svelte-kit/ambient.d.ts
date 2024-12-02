@@ -47,7 +47,6 @@ declare module '$env/static/private' {
 	export const NVM_INC: string;
 	export const CINNAMON_2D: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE: string;
-	export const NODE_OPTIONS: string;
 	export const GTK_MODULES: string;
 	export const XDG_SEAT_PATH: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
@@ -111,7 +110,6 @@ declare module '$env/static/private' {
 	export const GPG_AGENT_INFO: string;
 	export const GJS_DEBUG_OUTPUT: string;
 	export const LC_IDENTIFICATION: string;
-	export const VSCODE_INSPECTOR_OPTIONS: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const XDG_VTNR: string;
 	export const npm_config_globalconfig: string;
@@ -181,7 +179,6 @@ declare module '$env/dynamic/private' {
 		NVM_INC: string;
 		CINNAMON_2D: string;
 		GIO_LAUNCHED_DESKTOP_FILE: string;
-		NODE_OPTIONS: string;
 		GTK_MODULES: string;
 		XDG_SEAT_PATH: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
@@ -245,7 +242,6 @@ declare module '$env/dynamic/private' {
 		GPG_AGENT_INFO: string;
 		GJS_DEBUG_OUTPUT: string;
 		LC_IDENTIFICATION: string;
-		VSCODE_INSPECTOR_OPTIONS: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		XDG_VTNR: string;
 		npm_config_globalconfig: string;

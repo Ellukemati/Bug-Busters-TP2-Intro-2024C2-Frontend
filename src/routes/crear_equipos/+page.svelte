@@ -101,6 +101,19 @@
                 required
             />
         </label>
+        <label>
+            Incluir hasta:
+            <select bind:value={generacion}>
+                <option value="Generación 1">Generación 1</option>
+                <option value="Generación 2">Generación 2</option>
+                <option value="Generación 3">Generación 3</option>
+                <option value="Generación 4">Generación 4</option>
+                <option value="Generación 5">Generación 5</option>
+                <option value="Generación 6">Generación 6</option>
+                <option value="Generación 7">Generación 7</option>
+                <option value="Generación 8">Generación 8</option>
+            </select>
+        </label>
         </div>
         </div>
     </div>
@@ -118,7 +131,7 @@
                                 label="Seleccionar pokemon"
                                 placeholder={`Buscar pokemon por nombre`}
                                 data={data.pokemonList}
-                                extract={(pokemon) => `${pokemon.nombre} (ID: ${pokemon.id})`}
+                                extract={(pokemon) => `${pokemon.nombre} (Tipos: ${pokemon.tipo_1} ${ +pokemon.tipo_2 ||''}) (ID: ${pokemon.id})`}
                                 on:select={({ detail }) => seleccionarPokemon(index, detail.original)}
                                 inputAfterSelect='clear'
                             />
@@ -133,19 +146,6 @@
                                 inputAfterSelect='clear'
                             />
                         </div>
-                        <label>
-                            Generación:
-                            <select bind:value={generacion}>
-                                <option value="Generación 1">Generación 1</option>
-                                <option value="Generación 2">Generación 2</option>
-                                <option value="Generación 3">Generación 3</option>
-                                <option value="Generación 4">Generación 4</option>
-                                <option value="Generación 5">Generación 5</option>
-                                <option value="Generación 6">Generación 6</option>
-                                <option value="Generación 7">Generación 7</option>
-                                <option value="Generación 8">Generación 8</option>
-                            </select>
-                        </label>
                         <div>
                             <label for="integrante-id-{index}">ID Integrante:</label>
                             <input type="number" bind:value={integrante.id} required />
@@ -168,7 +168,7 @@
                                     label="Seleccionar movimiento"
                                     placeholder={`Buscar movimiento por nombre`}
                                     data={data.move.filter(movimiento => movimiento.generacion <= generacion)}
-                                    extract={(movimiento) => `${movimiento.nombre} (ID: ${movimiento.id})`}
+                                    extract={(movimiento) => `${movimiento.nombre} (Tipo: ${movimiento.tipo}) (Categoria: ${movimiento.categoria})  (ID: ${movimiento.id})`}
                                     on:select={({ detail }) => seleccionarMovimiento(index, movimientoIndex, detail.original)}
                                     inputAfterSelect='clear'
                                 />
