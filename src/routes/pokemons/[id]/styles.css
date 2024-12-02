@@ -3,10 +3,11 @@
 .tabla-habilidades,
 .tabla-datos {
     background-color: #a3a3a3;
-    width: 150px;
+    width: auto;
     border-radius: 10px;
     padding: 10px;
     border-style: double;
+    font-size: small;
 
 
 }
@@ -15,6 +16,7 @@
     width: auto;
     border-style: ridge;
     border-color: rgba(0, 0, 0, 0.216);
+
 }
 
 .table-content-boton {
@@ -27,8 +29,8 @@
 
 
 .tabla-evolutiva {
-    background-color: #580367;
-    width: 150px;
+    background-color: #ca96ff;
+    width: 200px;
     border-radius: 10px;
     padding: 10px;
     border-style: double;
@@ -51,8 +53,7 @@ a {
 }
 
 a:hover .imagen-boton {
-    /*border-radius: 4px;
-    border-color: #007bff;*/
+
     transform: scale(1.1);
     transition: transform 0.2s, border-color 0.2s;
 }
@@ -65,28 +66,27 @@ a:hover .imagen-boton {
 
 
 .item-title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
     padding-left: 5px;
-    background-color: #aa5599;
-    width: 150px;
+    background-color: #5e9888;
+    width: auto;
     border-radius: 7px;
-    text-align: center;
+    padding-bottom: 5px;
+    font-size: medium;
 }
 
 .table-title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
     padding-left: 5px;
-    background-color: #2993ba;
+    background-color: #84ddfd;
     border-radius: 7px;
-    width: 300px;
+    width: 500px;
     text-align: center;
 }
 
 
 .description {
-    font-size: larger;
+    font-size: medium;
 }
 
 .imagen {
@@ -129,7 +129,7 @@ header h1 {
 
 .Planta {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #77cc55;
     border: 1px solid #a3a3a3;
@@ -148,7 +148,7 @@ header h1 {
 
 .Veneno {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #aa5599;
     border: 1px solid #a3a3a3;
@@ -167,7 +167,7 @@ header h1 {
 
 .Eléctrico {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #ffcc33;
     border: 1px solid #a3a3a3;
@@ -187,7 +187,7 @@ header h1 {
 
 .Fuego {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #ff4422;
     border: 1px solid #a3a3a3;
@@ -207,7 +207,7 @@ header h1 {
 
 .Volador {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #8899ff;
     border: 1px solid #a3a3a3;
@@ -227,7 +227,7 @@ header h1 {
 
 .Agua {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #3399ff;
     border: 1px solid #a3a3a3;
@@ -246,7 +246,7 @@ header h1 {
 
 .Normal {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #aaaa99;
     border: 1px solid #a3a3a3;
@@ -265,7 +265,7 @@ header h1 {
 
 .Bicho {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #aabb22;
     border: 1px solid #a3a3a3;
@@ -284,7 +284,7 @@ header h1 {
 
 .Roca {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #bbaa66;
     border: 1px solid #a3a3a3;
@@ -303,7 +303,7 @@ header h1 {
 
 .Tierra {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #ddbb55;
     border: 1px solid #a3a3a3;
@@ -322,7 +322,7 @@ header h1 {
 
 .Lucha {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #bb5544;
     border: 1px solid #a3a3a3;
@@ -341,7 +341,7 @@ header h1 {
 
 .Hada {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #ee99ee;
     border: 1px solid #a3a3a3;
@@ -360,7 +360,7 @@ header h1 {
 
 .Psíquico {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #ff5599;
     border: 1px solid #a3a3a3;
@@ -379,7 +379,7 @@ header h1 {
 
 .Fantasma {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #6666bb;
     border: 1px solid #a3a3a3;
@@ -398,7 +398,7 @@ header h1 {
 
 .Siniestro {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #775544;
     border: 1px solid #a3a3a3;
@@ -417,7 +417,7 @@ header h1 {
 
 .Acero {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #aaaabb;
     border: 1px solid #a3a3a3;
@@ -436,7 +436,7 @@ header h1 {
 
 .Hielo {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #66ccff;
     border: 1px solid #a3a3a3;
@@ -455,7 +455,7 @@ header h1 {
 
 .Dragón {
     display: inline-block;
-    width: 66px;
+    width: 109px;
     margin-bottom: 4px;
     background: #7766ee;
     border: 1px solid #a3a3a3;
