@@ -21,6 +21,31 @@
 			.replace(/-/g, ' ')
 			.replace(/\b\w/g, char => char.toUpperCase());
 	}
+    const tipoColores = {
+        "Normal": "#aaaa99",
+        "Fuego": "#ff4422",
+        "Agua": "#3399ff",
+        "Eléctrico": "#ffcc33",
+        "Planta": "#77cc55",
+        "Hielo": "#66ccff",
+        "Lucha": "#bb5544",
+        "Veneno": "#aa5599",
+        "Tierra": "#ddbb55",
+        "Volador": "#8899ff",
+        "Psíquico": "#ff5599",
+        "Bicho": "#aabb22",
+        "Roca": "#bbaa66",
+        "Fantasma": "#6666bb",
+        "Dragón": "#7766ee",
+        "Siniestro": "#775544",
+        "Acero": "#aaaabb",
+        "Hada": "#ee99ee"
+    };
+
+
+    function obtenerColor(tipo) { // Función para colorear los tipos
+        return tipoColores[tipo];
+    }
 </script>
 
 <h1>Pokédex</h1>
@@ -65,15 +90,19 @@ class="buscador"
 			<img src="{pokemon.url_imagen}" alt="Imagen de {formatearNombre(pokemon.nombre)}" />
 			<h2>{formatearNombre(pokemon.nombre)}</h2>
 			<div class="tipo-cartel">
-				<span class="{pokemon.tipo_1}" style="background-color: {pokemon.tipo_1};">
-					{formatearNombre(pokemon.tipo_1)}
-				</span>
-				{#if pokemon.tipo_2}
-					<span class="{pokemon.tipo_2}" style="background-color: {pokemon.tipo_2};">
-						{formatearNombre(pokemon.tipo_2)}
-					</span>
-				{/if}
-			</div>
+                <span class="Cartel-Tipo"
+                    style="background-color: {obtenerColor(pokemon.tipo_1)};
+                             color: #fff;">
+                    {formatearNombre(pokemon.tipo_1)}
+                </span>
+                {#if pokemon.tipo_2}
+                    <span class="Cartel-Tipo"
+                    style="background-color: {obtenerColor(pokemon.tipo_2)};
+                             color: #fff;">
+                        {formatearNombre(pokemon.tipo_2)}
+                    </span>
+                {/if}
+            </div>
 		</a>
 	{/each}
 </div>
@@ -192,5 +221,6 @@ class="buscador"
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
         text-transform: uppercase;
         transition: opacity 0.4s;
+        min-width: 10px;
     }
 </style>
