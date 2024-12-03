@@ -34,8 +34,9 @@
    <thead>
        <tr>
            <th style="width:10%;" class="header_tabla_equipos">ID</th>
-           <th style="width:20%;" class="header_tabla_equipos">Nombre</th>
+           <th style="width:10%;" class="header_tabla_equipos">Nombre</th>
            <th style="width:70%;" class="header_tabla_equipos">Integrantes</th>
+           <th style="width:10%;" class="header_tabla_equipos">Acciones</th>
        </tr>
    </thead>
    <tbody>
@@ -66,7 +67,31 @@
                         {/each}
                         </div>
                 </td>
+                <td>
+                    <form method="POST" action="?/delete"> 
+                        <input type="hidden" name="id" value={equipo.id_equipo} />
+                        <button type="submit">Borrar equipo</button>
+                    </form>
+               </td>
+
            </tr>
        {/each}
    </tbody>
 </table>
+
+<style>
+    button {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #808080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4e4e4e;
+}
+</style>
