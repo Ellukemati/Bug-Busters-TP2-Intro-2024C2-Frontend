@@ -1,0 +1,422 @@
+
+    label{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    input {
+        width: 100%;
+        font-size: 12px;
+        padding: 12px 12px 12px 40px;
+        border: 6px solid #ddddddba;
+        margin-bottom: 12px;
+    }
+    h1{
+        text-align: center;
+    }
+    .nombre_movs_individual:link{
+        font-family: 'Press Start 2P', sans-serif;
+        text-decoration: none;
+    }
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+     th {
+        border: 10px solid black;
+        text-align: center;
+        padding: 8px;
+        background-color: #8899ff;
+    }
+    .físico{
+        background-image:url("https://img.pokemondb.net/images/icons/move-physical.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+    .especial{
+        background-image:url("https://img.pokemondb.net/images/icons/move-special.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+    .estado{
+        background-image:url("https://img.pokemondb.net/images/icons/move-status.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+    .Hada{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #ee99ee;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Acero{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #aaaabb;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Siniestro{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #775544;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Dragón{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #7766ee;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Fantasma{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #6666bb;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Roca{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #bbaa66;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Bicho{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #aabb22;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Psíquico{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #ff5599;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Volador{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #8899ff;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Tierra{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #ddbb55;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Veneno{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #aa5599;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Lucha{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #bb5544;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Hielo{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #66ccff;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Planta{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #77cc55;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Oscuro{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #56569d;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Eléctrico{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #ffcc33;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Agua{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #3399ff;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Fuego{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #ff4422;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    .Normal{
+        display: inline-block;
+    width: 66px;
+    margin-bottom: 4px;
+    background: #aaaa99;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.2);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    text-transform: uppercase;
+    transition: opacity .4s;
+    padding: 4px;
+    margin-left: 25%;
+    }
+    td{
+        border: 10px solid black;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even) {
+        background-color: #ffffff;
+        }
+    tr{
+        background-color: #dfdfdf;
+    }
+    .texto_movs{
+        font-family: 'Press Start 2P', sans-serif;
+    }
