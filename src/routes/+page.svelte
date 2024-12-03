@@ -2,7 +2,7 @@
 	import './styles.css';
 </script>
 
-<body>
+<div class="contenedor-principal">
 <div class="contenedor">
 	<div class="cabecera">
 		<h1 class="titulo-principal">Pokédex</h1>
@@ -29,6 +29,11 @@
 				¡Creá tu propio Equipo Pokémon con sus Integrantes y Movimientos!
 				<p class="descripcion">- Recordá revisar que tu Pokémon pueda aprender los movimientos que quieras ponerle.</p>
 			</li>
+			<li class="elemento-lista">
+				<a href="http://localhost:5173/equipos" class="highlight">EQUIPOS</a> >>>
+				¡Analiza todos los equipos creados, sus integrantes y movimientos!
+				<p class="descripcion">- Clickeando los integrantes Pokémon y nombres de los equipos podés verlos en detalle.</p>
+			</li>
 		</ul>
 
 		<div class="separador"></div>
@@ -50,12 +55,10 @@
 		</ul>
 	</div>
 </div>
-</body>
+</div>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-    body {
+    .contenedor-principal {
         margin: 0;
         padding: 0;
         font-family: 'Press Start 2P', cursive;
@@ -91,6 +94,7 @@
     .subtitulo {
         font-size: 1.2rem;
         color: #555;
+        font-family: 'Press Start 2P', cursive;
     }
 
     .contenido {
@@ -100,10 +104,16 @@
         color: #444;
     }
 
+    .descripcion {
+        font-family: 'Press Start 2P', cursive;
+    }
+
     .titulo {
         color: #444;
         font-weight: bold;
         margin-bottom: 1rem;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1rem
     }
 
     .lista-bienvenida {
