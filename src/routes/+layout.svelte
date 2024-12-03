@@ -24,11 +24,6 @@
 <slot />
 
 <style>
-    body {
-        background-color: #e5e5e5;
-        font-family: 'Press Start 2P', sans-serif;
-    }
-
     .barra-navegacion {
         background-color: #333;
         padding: 0.5rem 1rem;
