@@ -1,9 +1,10 @@
 <script>
 	export let data;
 
-	function capitalizeFirstLetter(string) {
-		if (!string) return '';
-		return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+	function formatearNombre(nombre) {
+		return nombre
+			.replace(/-/g, ' ')
+			.replace(/\b\w/g, char => char.toUpperCase());
 	}
 	import './styles.css';
 	function handleClick() {
@@ -14,7 +15,7 @@
 <main class="main">
 	<header>
 		<img src={data.pokemon.url_imagen} alt="Imagen de {data.pokemon.nombre}" class="header-img" />
-		<h1>{capitalizeFirstLetter(data.pokemon.nombre)}</h1>
+		<h1>{formatearNombre(data.pokemon.nombre)}</h1>
 	</header>
 	<img src={data.pokemon.url_imagen} alt="Imagen de {data.pokemon.nombre}" class="imagen" />
 
@@ -155,7 +156,7 @@
 		{/if}
 	</div>
 	<div>
-		<p class="table-title">Movimientos que puede aprender {data.pokemon.nombre}</p>
+		<p class="table-title">Movimientos que puede aprender {formatearNombre(data.pokemon.nombre)}</p>
 		<table>
 			<thead>
 				<tr>
