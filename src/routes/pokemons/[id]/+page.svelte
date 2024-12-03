@@ -11,6 +11,10 @@
 	}
 </script>
 
+<svelte:head>
+	<link rel="stylesheet" href="./styles.css" />
+</svelte:head>
+
 <main class="main">
 	<header>
 		<img src={data.pokemon.url_imagen} alt="Imagen de {data.pokemon.nombre}" class="header-img" />
