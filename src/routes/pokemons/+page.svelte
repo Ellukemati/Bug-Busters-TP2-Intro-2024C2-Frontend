@@ -1,51 +1,51 @@
 <script>
 	export let data;
 	let listaPokemon = [...data.pokemon].sort((a, b) => a.id - b.id); // Ordeno los Pokémon por ID
-	let searchQuery = '';
-	let resultados = [];
+	let busqueda = '';
+	let listaFiltrada = [...listaPokemon];
 
 	import './styles.css';
 
+	const tipoColores = {
+		"Normal": "#aaaa99",
+		"Fuego": "#ff4422",
+		"Agua": "#3399ff",
+		"Eléctrico": "#ffcc33",
+		"Planta": "#77cc55",
+		"Hielo": "#66ccff",
+		"Lucha": "#bb5544",
+		"Veneno": "#aa5599",
+		"Tierra": "#ddbb55",
+		"Volador": "#8899ff",
+		"Psíquico": "#ff5599",
+		"Bicho": "#aabb22",
+		"Roca": "#bbaa66",
+		"Fantasma": "#6666bb",
+		"Dragón": "#7766ee",
+		"Siniestro": "#775544",
+		"Acero": "#aaaabb",
+		"Hada": "#ee99ee"
+	};
+
 	function buscarPokemon() {
-		if (searchQuery.trim() === '') {
-			resultados = [];
+		if (busqueda.trim() === '') {
+			listaFiltrada = listaPokemon;
 		} else {
-			resultados = listaPokemon.filter(pokemon =>
-				pokemon.nombre.toLowerCase().startsWith(searchQuery.toLowerCase())
+			listaFiltrada = listaPokemon.filter(pokemon =>
+				pokemon.nombre.toLowerCase().startsWith(busqueda.toLowerCase().trim())
 			);
 		}
 	}
 
-	function formatearNombre(nombre) { 	// Función para formatear los nombres
+	function formatearNombre(nombre) {
 		return nombre
 			.replace(/-/g, ' ')
 			.replace(/\b\w/g, char => char.toUpperCase());
 	}
-    const tipoColores = {
-        "Normal": "#aaaa99",
-        "Fuego": "#ff4422",
-        "Agua": "#3399ff",
-        "Eléctrico": "#ffcc33",
-        "Planta": "#77cc55",
-        "Hielo": "#66ccff",
-        "Lucha": "#bb5544",
-        "Veneno": "#aa5599",
-        "Tierra": "#ddbb55",
-        "Volador": "#8899ff",
-        "Psíquico": "#ff5599",
-        "Bicho": "#aabb22",
-        "Roca": "#bbaa66",
-        "Fantasma": "#6666bb",
-        "Dragón": "#7766ee",
-        "Siniestro": "#775544",
-        "Acero": "#aaaabb",
-        "Hada": "#ee99ee"
-    };
 
-
-    function obtenerColor(tipo) { // Función para colorear los tipos
-        return tipoColores[tipo];
-    }
+	function obtenerColorTipo(tipo) {
+		return tipoColores[tipo];
+	}
 </script>
 
 <h1>Pokédex</h1>
@@ -53,56 +53,27 @@
 <input
 	type="text"
 	placeholder="Buscar Pokémon..."
-	bind:value={searchQuery}
+	bind:value={busqueda}
 	on:input={buscarPokemon}
-class="buscador"
+	class="buscador"
 />
 
-{#if resultados.length > 0}
-	<ul class="resultados">
-		{#each resultados as pokemon, index}
-			<li class="resultado-item {index % 2 === 0 ? 'gris' : 'blanco'}">
-				<a href="/pokemons/{pokemon.id}" class="resultado-link">
-					<img src="{pokemon.url_imagen}" alt="{formatearNombre(pokemon.nombre)}" class="resultado-imagen" />
-					<div class="resultado-info">
-						<h3>{formatearNombre(pokemon.nombre)}</h3>
-						<div class="tipo-cartel">
-              <span class="{pokemon.tipo_1}" style="background-color: {pokemon.tipo_1};">
-                {formatearNombre(pokemon.tipo_1)}
-              </span>
-							{#if pokemon.tipo_2}
-                <span class="{pokemon.tipo_2}" style="background-color: {pokemon.tipo_2};">
-                  {formatearNombre(pokemon.tipo_2)}
-                </span>
-							{/if}
-						</div>
-					</div>
-				</a>
-			</li>
-		{/each}
-	</ul>
-{/if}
-
 <div class="grilla-pokemon">
-	{#each listaPokemon as pokemon}
+	{#each listaFiltrada as pokemon}
 		<a href="/pokemons/{pokemon.id}" class="pokemon-tarjeta">
 			<span class="pokemon-id">ID #{pokemon.id}</span>
 			<img src="{pokemon.url_imagen}" alt="Imagen de {formatearNombre(pokemon.nombre)}" />
 			<h2>{formatearNombre(pokemon.nombre)}</h2>
 			<div class="tipo-cartel">
-                <span class="Cartel-Tipo"
-                    style="background-color: {obtenerColor(pokemon.tipo_1)};
-                             color: #fff;">
-                    {formatearNombre(pokemon.tipo_1)}
-                </span>
-                {#if pokemon.tipo_2}
-                    <span class="Cartel-Tipo"
-                    style="background-color: {obtenerColor(pokemon.tipo_2)};
-                             color: #fff;">
-                        {formatearNombre(pokemon.tipo_2)}
-                    </span>
-                {/if}
-            </div>
+        <span class="tipo-cartel" style="background-color: {obtenerColorTipo(pokemon.tipo_1)}; color: #fff;">
+          {formatearNombre(pokemon.tipo_1)}
+        </span>
+				{#if pokemon.tipo_2}
+          <span class="tipo-cartel" style="background-color: {obtenerColorTipo(pokemon.tipo_2)}; color: #fff;">
+            {formatearNombre(pokemon.tipo_2)}
+          </span>
+				{/if}
+			</div>
 		</a>
 	{/each}
 </div>
@@ -121,75 +92,29 @@ class="buscador"
         font-weight: normal
     }
 
-    .resultados {
-        background-color: #fff;
-        font-family: 'Press Start 2P', sans-serif;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        max-width: 20%;
-        margin-top: 0.5rem;
-        list-style: none;
-        padding: 0;
-        position: absolute;
-        z-index: 10;
-        width: 80%;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    .grilla-pokemon {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 
-    .resultado-item {
-        display: flex;
-        align-items: center;
-        margin: 10px 0;
-        padding: 10px;
-        border-radius: 8px;
-        border-bottom: 1px solid #ddd;
-        background-color: #f8f8f8;
-        transition: background-color 0.2s ease;
-    }
-
-    .resultado-item.gris {
-        background-color: #dfdfdf;
-    }
-
-    .resultado-item.blanco {
-        background-color: #ffffff;
-    }
-
-    .resultado-item:hover {
-        background-color: #e1e1e1;
-    }
-
-    .resultado-link {
-        display: flex;
-        text-decoration: none;
-        color: inherit;
-        align-items: center;
-    }
-
-    .resultado-imagen {
-        width: 40px;
-        height: 40px;
-        object-fit: contain;
-    }
-
-    .resultado-info {
+    .pokemon-tarjeta {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        align-items: center;
+        padding: 1rem;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
     }
 
-    .resultado-info h3 {
-        font-size: 1rem;
-        margin: 0;
-    }
-
-    h1, .pokemon-tarjeta, .tipo-cartel {
-        font-family: 'Press Start 2P', sans-serif;
-    }
-
-    .pokemon-tarjeta h2 {
-        font-size: 1rem;
-        margin: 0.5rem 0;
+    .pokemon-tarjeta:hover {
+        transform: scale(1.05);
     }
 
     .pokemon-id {
@@ -199,6 +124,17 @@ class="buscador"
         font-size: 0.7rem;
         color: #555;
         font-weight: normal;
+    }
+
+    .pokemon-tarjeta img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    .pokemon-tarjeta h2 {
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
     }
 
     .tipo-cartel {
@@ -221,6 +157,5 @@ class="buscador"
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
         text-transform: uppercase;
         transition: opacity 0.4s;
-        min-width: 10px;
     }
 </style>

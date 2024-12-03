@@ -9,7 +9,7 @@
 			<li><a href="/pokemons" class="barra-navegacion-link">Pokédex</a></li>
 			<li><a href="/movimientos" class="barra-navegacion-link">Lista de Movimientos</a></li>
 			<li><a href="/equipos" class="barra-navegacion-link">Equipos</a></li>
-			<li><a href="/creacion-equipos" class="barra-navegacion-link">Creación de Equipos</a></li> <!-- Cambiar link cuando esté la creación de equipos -->
+			<li><a href="/crear_equipos" class="barra-navegacion-link">Creación de Equipos</a></li> <!-- Cambiar link cuando esté la creación de equipos -->
 		</ul>
 	</nav>
 {/if}
