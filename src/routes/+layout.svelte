@@ -1,5 +1,12 @@
 <script>
 	import { page } from '$app/stores';
+	import { afterNavigate } from '$app/navigation';
+
+	afterNavigate((nav) => {
+		const ruta = nav.route.id ?? 'default';
+		document.body.className = '';
+		document.body.classList.add(ruta.replaceAll('/', '-'));
+	});
 </script>
 
 {#if $page.url.pathname !== '/'}
